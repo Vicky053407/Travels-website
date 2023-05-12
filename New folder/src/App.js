@@ -9,13 +9,13 @@ import Navbar from "./components/Navbar";
 export default function App() {
   return (
     <div className="App">
-      <Routes>
         <Navbar/>
+        <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/service" element={<Service/>}/>
         <Route path="/contact" element={<Contact/>}/>
-      </Routes>
+        </Routes>
     </div>
    
   );

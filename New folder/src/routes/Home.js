@@ -7,7 +7,17 @@ import Trip from "../components/Trip";
 function Home() {
   return (
     <>
-      <h1>home page</h1>
+    <Navbar/>
+    <Hero
+    cName="hero"
+    heroImg="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    title="Make Your Journey Joyful"
+    text="Choose Your Favourite Destination."
+    buttonText="Make My Trip"
+    url="/"
+    btnClass="show"
+    />
+
     </>
   );
 }
