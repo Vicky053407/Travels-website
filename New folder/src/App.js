@@ -1,6 +1,5 @@
 import "./styles.css";
-import { Route, Switch } from "react-router-dom";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home"
 import About from "./routes/About";
 import Service from "./routes/Service";
@@ -10,9 +9,13 @@ import Navbar from "./components/Navbar";
 export default function App() {
   return (
     <div className="App">
-     <Router>
-      <Navbar/>
-    </Router>
+      <Routes>
+        <Navbar/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/service" element={<Service/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+      </Routes>
     </div>
    
   );
