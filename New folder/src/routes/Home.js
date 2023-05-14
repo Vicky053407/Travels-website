@@ -1,4 +1,4 @@
-import DestinationData from "../components/DestinationData";
+import Destination from "../components/Destination";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
@@ -17,7 +17,8 @@ function Home() {
     url="/"
     btnClass="show"
     />
-    <DestinationData/>
+    <Destination/>
+    <Trip/>
 
     </>
   );

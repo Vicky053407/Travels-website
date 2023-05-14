@@ -13,7 +13,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems">
-        <h1>Travels</h1>
+        <h1>Narasimma Travels</h1>
 
         <div className="menu-icons" onClick={this.handleClick}>
           <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
@@ -23,7 +23,7 @@ class Navbar extends Component {
           {MenuItems.map((item,index)=>{
             return(
               <li key={index}>
-              <Link className={item.cName} to={item.url}><i class={item.icon}></i>{item.title}</Link>
+              <Link className={item.cName} to={item.url}><i className={item.icon}></i>{item.title}</Link>
             </li>
             )
           })}
