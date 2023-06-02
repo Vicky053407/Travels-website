@@ -13,4 +13,4 @@ function TripData(props) {
 }
 
 export default TripData;
- 
+   
